@@ -1,0 +1,81 @@
+#Variables
+$color-letras: lightgray
+$color-background: #1c2a37
+
+#SASS
+
+.app
+    background-color: $color-background
+    margin: 20%
+    width: 60%
+    min-height: 60%
+    position: relative
+    border: 2px solid skyblue
+    border-radius: 5px
+
+.app-child
+    padding: 0 1% 0 1%
+
+h1
+    color: $color-letras
+    font-family: Calibri
+    text-align: center
+
+h2,h3,h4,h5,p
+    color: $color-letras
+    font-family: Calibri
+
+.child-insert
+    width: 100%
+    height: 100%
+    display: flex
+    text-align: center
+
+.textbox
+    width: 70%
+    height: 35px
+    border: 2px solid skyblue
+    border-radius: 5px
+
+.button
+    width: 27%
+    margin-left: 1%
+    background-color: skyblue
+    border: 2px solid skyblue
+    border-radius: 5px
+    font-family: Calibri
+    font-size: 20pt
+    color: white
+
+.child-lista
+    width: 100%
+    position: relative
+
+.table
+    color: $color-letras
+    font-family: Calibri
+    width: 100%
+    
+    tr
+        width: 100%
+        height: 100%
+        display: flex
+
+        input
+            width: 20px
+            height: 20px
+            margin-top: 20px
+            text-align: left
+        h3
+            width: 80%
+        app-edit
+            width: 10%
+        app-delete
+            width: 10%
+            
+        
+button
+    background: none
+    border: none
+    width: auto
+    height: 40px

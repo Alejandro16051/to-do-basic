@@ -1,0 +1,34 @@
+<div class="app">
+  <h1>Comsatel Basic ToDo</h1>
+
+  <div class="app-child">
+    <h2>Tareas</h2>
+
+    <div class="child-insert">
+      <input class="textbox" type="text" name="item" [(ngModel)]="tareaSave.descripcion">
+      <button class="button" role="button" (click)='create()'><span>Agregar</span></button>
+    </div>
+  </div>
+  <br />
+  <div class="child-lista">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let task of tarea">
+          <input type="checkbox" name="estado">
+          <h3 name="descripcion" >{{task.descripcion}}</h3>
+          <button role="button">
+            <app-edit></app-edit>
+          </button>
+          <button role="button" (click)='eliminar(task)'>
+            <app-delete></app-delete>
+          </button>
+          <br>
+        </tr>
+
+
+      </tbody>
+
+    </table>
+  </div>
+
+</div>
